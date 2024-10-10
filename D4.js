@@ -49,10 +49,8 @@ crazyDiff(24)
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 const boundary = function name(n) {
-  if ((n > 20 && n < 100) || n === 400) {
-    console.log(true)
-  } else {
-    console.log(false)
+  if ((n > 20 && n <= 100) || n === 400) {
+    return true
   }
 }
 boundary(5)
@@ -66,10 +64,10 @@ boundary(45)
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
 const epify = function name(albero) {
-  if (albero !== 'EPICODE') {
-    console.log(albero + ' ' + 'EPICODE')
+  if (albero.startswitch('EPICODE')) {
+    return albero
   } else {
-    console.log(albero)
+    return 'EPICODE' + albero
   }
 }
 epify('ciao')
@@ -80,14 +78,24 @@ epify('EPICODE')
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-const check3and7 = function name(npos) {}
+const check3and7 = function name(npos) {
+  if (npos % 3 === 0 || npos % 7 === 0) {
+    console.log('multiplo')
+  }
+}
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-const reverseString = function (EPICODE) {}
+const reverseString = function (EPICODE) {
+  const arrayfromstr = EPICODE.split('E', 'P', 'I', 'C', 'O', 'D', 'E')
 
+  arrayfromstr.reverse()
+  const invertedstr = arrayfromstr.join('')
+  return invertedstr
+}
+reverseString('EPICODE')
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
