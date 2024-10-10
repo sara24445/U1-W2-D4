@@ -32,9 +32,9 @@ crazySum(5, 5)
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 /* SCRIVI QUI LA TUA RISPOSTA */
-const crazyDiff = function name(n) {
-  let sub = n - 19
-  if (n <= 19) {
+const crazyDiff = function name(f) {
+  let sub = f - 19
+  if (f <= 19) {
     console.log('la differenza è' + ' ' + sub)
   } else {
     console.log('la differenza è' + ' ' + sub * 3)
@@ -47,46 +47,66 @@ crazyDiff(24)
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function name(n) {
+  if ((n > 20 && n < 100) || n === 400) {
+    console.log(true)
+  } else {
+    console.log(false)
+  }
+}
+boundary(5)
+boundary(400)
+boundary(45)
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
  La funzione deve aggiungere la parola "EPICODE" all'inizio della stringa fornita, ma se la stringa fornita comincia già con "EPICODE" allora deve
  ritornare la stringa originale senza alterarla.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const epify = function name(albero) {
+  if (albero !== 'EPICODE') {
+    console.log(albero + ' ' + 'EPICODE')
+  } else {
+    console.log(albero)
+  }
+}
+epify('ciao')
+epify('EPICODE')
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const check3and7 = function name(npos) {}
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const reverseString = function (EPICODE) {}
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const upperFirst = function name(ciao) {}
+upperFirst('buongiorno belle persone')
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+const cutString = function name(ola) {}
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function name(n) {
+  const diceNumber = giveMeRandom()
+  console.log(n)
+  return integerResult
+}
